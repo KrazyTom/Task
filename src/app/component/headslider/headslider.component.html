@@ -1,0 +1,63 @@
+<div>
+<ngb-carousel>
+    <ng-template ngbSlide *ngFor="let item of Images">
+      <div class="picsum-img-wrapper">
+        <img src="{{item.landscapePosterId}}" class="img-fluid" alt="{{item.title}}">
+      </div>
+    </ng-template>
+</ngb-carousel>
+</div>
+<div class="container-fluid">
+    <h5>Popular</h5>
+    <ng-image-slider #nav
+      [images]="PopularIamges"
+      [infinite]="false"
+      [autoSlide]="1"
+      slideImage="1">
+    </ng-image-slider>
+</div>
+<div class="container-fluid">
+    <h5>Ads</h5>
+        <ng-image-slider #nav
+          [images]="ads"
+          [infinite]="false"
+          [autoSlide]="1"
+          slideImage="1">
+        </ng-image-slider>
+    </div>
+<div class="container-fluid">
+    <h5>Originals</h5>
+        <ng-image-slider #nav
+              [images]="originals"
+              [infinite]="false"
+              [autoSlide]="1"
+              slideImage="1">
+            </ng-image-slider>
+</div>
+<div class="container-fluid">
+    <h5>Action</h5>
+        <ng-image-slider #nav
+                [images]="action"
+                [infinite]="false"
+                [autoSlide]="1"
+                slideImage="1">
+        </ng-image-slider>
+</div>
+<div class="container-fluid">
+    <h5>Comedi</h5>
+        <ng-image-slider #nav
+                [images]="comedies"
+                [infinite]="false"
+                [autoSlide]="1"
+                slideImage="1">
+        </ng-image-slider>
+</div>
+<div class="container-fluid">
+    <h5>BlockBuster</h5>
+        <ng-image-slider #nav
+            [images]="blockbuster"
+            [infinite]="false"
+            [autoSlide]="1"
+            slideImage="1">
+        </ng-image-slider>
+</div>
